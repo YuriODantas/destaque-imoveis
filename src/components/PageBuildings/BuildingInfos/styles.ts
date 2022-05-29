@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div<{ image: string }>`
   height: 84vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
