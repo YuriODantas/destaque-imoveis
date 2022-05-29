@@ -4,7 +4,7 @@ export const Container = styled.header`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   background-color: ${({ theme }) => theme.colors.secondary};
 `
 
