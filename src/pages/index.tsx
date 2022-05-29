@@ -40,7 +40,7 @@ const Home: React.FC = () => {
           <Button
             icon="/logo-building.svg"
             name="Residencial Cedros"
-            url="/Cedros"
+            url="/cedros"
           />
         </Content>
       </Container>

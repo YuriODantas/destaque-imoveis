@@ -21,3 +21,8 @@ export const Content = styled.div`
   align-items: center;
   flex: 1;
 `
+
+export const ContainerPageBuilding = styled(Container)`
+  background-image: none;
+  background-color: ${({ theme }) => theme.colors.background};
+`
