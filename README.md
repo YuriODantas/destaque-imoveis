@@ -1,5 +1,5 @@
 <div align="center">
-	<img src="https://github.com/YuriODantas/links-novo-tempo/blob/main/public/faviconNT.svg" with="800" height="200"/>
+	<img src="https://github.com/YuriODantas/destaque-imoveis/blob/main/public/logo-destaque.svg" with="800" height="200"/>
 	<h1>Landing Pages - Destaque Imóveis</h1>
 </div>
 <div align="center">
@@ -48,8 +48,8 @@ yarn start
 # ✅ Features Desenvolvidas
 
 -   [x] Mobile: Base do projeto
--   [ ] Mobile: Componentes dos botões
--   [ ] Mobile: Footer personalizado
+-   [x] Mobile: Componentes dos botões
+-   [x] Mobile: Footer personalizado
 -   [ ] Desktop: Componentes dos botões.
 -   [ ] Desktop: API do GoogleMaps.
 -   [ ] Desktop: API do Instagram.
