@@ -22,6 +22,8 @@ export const BannerInfos = styled.div`
   width: 250px;
   padding: 14px;
   margin: 20px 0 0 0;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 22px;
   color: ${({ theme }) => theme.colors.primary};
   background-color: ${({ theme }) => theme.colors.text};
   border-radius: 0 5px 5px 0;
@@ -53,10 +55,18 @@ export const Button = styled.button`
   margin: 0 20px 20px 20px;
   background-color: ${({ theme }) => theme.colors.green};
   color: ${({ theme }) => theme.colors.secondary};
-  font-family: inherit;
-  font-size: 24px;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 36px;
   font-weight: bold;
   border: none;
   border-radius: 10px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  img {
+    flex: 0;
+    margin: 0 0 0 10px;
+  }
+  p {
+    flex: 1;
+    text-align: center;
+  }
 `
