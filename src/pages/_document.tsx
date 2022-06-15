@@ -50,7 +50,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
           />
           <script
-            data-ad-client={process.env.NEXT_PUBLIC_GOOGLE_ADS}
+            data-ad-client={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}
             async
             src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
           />
@@ -67,9 +67,13 @@ export default class MyDocument extends Document {
             gtag('config', '${GA_TRACKING_ID}', {
               page_path: window.location.pathname,
             });
+            gtag('config', ${process.env.NEXT_PUBLIC_GOOGLE_ADS});
           `
             }}
           />
+          {/* <script>
+            gtag('event', 'conversion', {send_to: 'AW-368746473/JL2SCLvsuMIDEOm_6q8B'});
+          </script> */}
 
           <link rel="icon" href="/faviconNT.svg" />
         </Head>
