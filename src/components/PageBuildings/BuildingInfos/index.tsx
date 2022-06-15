@@ -11,11 +11,11 @@ type Props = {
 export const BuildingInfos = ({ image, name, bedroom, moreInfo }: Props) => {
   const [inputName, setInputName] = useState('')
 
-  const SendMessage = () => {
-    if (inputName.length > 2) {
-      window.location.href = `https://api.whatsapp.com/send?phone=5513997088957&text=Ol%C3%A1%2C%20meu%20nome%20%C3%A9%20${inputName}%20e%20estou%20interessado(a)%20no%20edif%C3%ADcio%20${name}`
-    }
-  }
+  // const SendMessage = () => {
+  //   if (inputName.length > 2) {
+  //     window.location.href = `https://api.whatsapp.com/send?phone=5513997088957&text=Ol%C3%A1%2C%20meu%20nome%20%C3%A9%20${inputName}%20e%20estou%20interessado(a)%20no%20edif%C3%ADcio%20${name}`
+  //   }
+  // }
 
   return (
     <S.Container image={image}>
@@ -31,10 +31,17 @@ export const BuildingInfos = ({ image, name, bedroom, moreInfo }: Props) => {
           onChange={e => setInputName(e.target.value)}
           value={inputName}
         />
-        <S.Button id="dispatchGoogle" onClick={SendMessage}>
+        {/* <S.Button id="dispatchGoogle" onClick={SendMessage}>
           <img src="/building.svg" alt="Building icon" />
           <p>Quero saber mais</p>
-        </S.Button>
+        </S.Button> */}
+        <S.Link
+          id="dispatchGoogle"
+          href={`https://api.whatsapp.com/send?phone=5513997088957&text=Ol%C3%A1%2C%20meu%20nome%20%C3%A9%20${inputName}%20e%20estou%20interessado(a)%20no%20edif%C3%ADcio%20${name}`}
+        >
+          <img src="/building.svg" alt="Building icon" />
+          <p>Quero saber mais</p>
+        </S.Link>
       </S.Wrapper>
     </S.Container>
   )

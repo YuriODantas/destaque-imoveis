@@ -70,3 +70,28 @@ export const Button = styled.button`
     text-align: center;
   }
 `
+
+export const Link = styled.a`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  margin: 0 20px 20px 20px;
+  background-color: ${({ theme }) => theme.colors.green};
+  color: ${({ theme }) => theme.colors.secondary};
+  font-family: 'Bebas Neue', cursive;
+  font-size: 36px;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  img {
+    flex: 0;
+    margin: 0 0 0 10px;
+  }
+  p {
+    flex: 1;
+    text-align: center;
+  }
+`
