@@ -67,7 +67,7 @@ export default class MyDocument extends Document {
             gtag('config', '${GA_TRACKING_ID}', {
               page_path: window.location.pathname,
             });
-            gtag('config', ${process.env.NEXT_PUBLIC_GOOGLE_ADS});
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ADS}');
           `
             }}
           />
