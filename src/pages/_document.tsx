@@ -71,9 +71,6 @@ export default class MyDocument extends Document {
           `
             }}
           />
-          {/* <script>
-            gtag('event', 'conversion', {send_to: 'AW-368746473/JL2SCLvsuMIDEOm_6q8B'});
-          </script> */}
 
           <link rel="icon" href="/faviconNT.svg" />
         </Head>
