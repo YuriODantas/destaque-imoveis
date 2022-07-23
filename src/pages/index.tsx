@@ -42,6 +42,11 @@ const Home: React.FC = () => {
             name="Residencial Cedros"
             url="/cedros"
           />
+          <Button
+            icon="/logo-building.svg"
+            name="Residencial Max 10"
+            url="/max10"
+          />
         </Content>
       </Container>
     </div>

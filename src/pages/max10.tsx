@@ -10,19 +10,18 @@ const cedros = () => {
   return (
     <ContainerPageBuilding>
       <HeaderPageBuildings
-        title="Leonardo Steinert"
-        subtitle="Corretor de Imóveis"
-        logo="/logo-leo-corretor.svg"
+        title="Fale com um consultor"
+        subtitle="Antecipe o seu cadastro"
       />
       <Description color={theme.colors.text}>
         Comprar seu imóvel nunca foi tão fácil
       </Description>
       <BuildingInfos
-        image="/buildingsImages/jardim-dos-cedros.jpg"
-        name="Res. Jardim dos Cedros"
-        bedroom="1 e 2 dormitórios"
-        moreInfo="Frente ao mar"
-        nameButton="Quero saber mais"
+        image="/buildingsImages/max10.jpg"
+        name="Residencial Max 10"
+        bedroom="1, 2 e 3 dormitórios"
+        moreInfo="Alto padrão"
+        nameButton="Pré-Cadastro"
       />
     </ContainerPageBuilding>
   )

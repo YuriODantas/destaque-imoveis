@@ -6,9 +6,16 @@ type Props = {
   name: string
   bedroom: string
   moreInfo: string
+  nameButton: string
 }
 
-export const BuildingInfos = ({ image, name, bedroom, moreInfo }: Props) => {
+export const BuildingInfos = ({
+  image,
+  name,
+  bedroom,
+  moreInfo,
+  nameButton
+}: Props) => {
   const [inputName, setInputName] = useState('')
   const [link, setLink] = useState(
     `https://api.whatsapp.com/send?phone=5513997088957&text=Ol%C3%A1%2C%20estou%20interessado(a)%20no%20edif%C3%ADcio%20${name}`
@@ -42,7 +49,7 @@ export const BuildingInfos = ({ image, name, bedroom, moreInfo }: Props) => {
         />
         <S.Link id="dispatchGoogle" href={link}>
           <img src="/building.svg" alt="Building icon" />
-          <p>Quero saber mais</p>
+          <p>{nameButton}</p>
         </S.Link>
       </S.Wrapper>
     </S.Container>

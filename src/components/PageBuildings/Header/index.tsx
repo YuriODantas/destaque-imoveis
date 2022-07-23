@@ -1,13 +1,23 @@
 import React from 'react'
 import * as S from './styles'
 
-export const HeaderPageBuildings = () => {
+type IProps = {
+  title: string
+  subtitle: string
+  logo?: string
+}
+
+export const HeaderPageBuildings: React.FC<IProps> = ({
+  title,
+  subtitle,
+  logo
+}) => {
   return (
     <S.Container>
-      <S.LogoLeo src="/logo-leo-corretor.svg" alt="Logo Leo Corretor" />
+      {logo && <S.LogoLeo src={logo} alt="Logo" />}
       <S.Wrapper>
-        <S.Title>Leonardo Steinert</S.Title>
-        <S.SubTitle>Corretor de Imóveis</S.SubTitle>
+        <S.Title>{title}</S.Title>
+        <S.SubTitle>{subtitle}</S.SubTitle>
       </S.Wrapper>
     </S.Container>
   )
